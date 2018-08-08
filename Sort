@@ -1,5 +1,30 @@
 
 public class Sort(){
-	
+	public static void main(String[] args){
+		int unsortedArray[] = new int[]{9,6,4,4,2,3,8};
+		bubbleSort(unsortedArray);
+		System.out.println("After sort: ");
+		for(int item : unsortArray){
+			System.out.println(item + " ");
+		}
+	}
+
+	public static void bubbleSort(int[] array){
+		int len = array.length;
+		for(int i = 0; i < len; i++){
+			for(int item : array){
+				System.out.println(item + " ");
+			}
+			System.out.println();
+			for(int j = 1; j < len - i; j++){
+				if(arrar[j - 1] > array[j]){
+					int temp = array[j - 1];
+					array[j - 1] = array[j];
+					array[j] = temp;
+				}
+		}
+		}
+
+	}
 	
 }
